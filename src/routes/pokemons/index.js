@@ -18,8 +18,8 @@
      const { type } = req.query;
      try {
          // 6.1.2: Acceder a la capa service para tener una respuesta
-         const pokemons = await shoeService.findAll(type);
-         res.status(200).json(shoes);
+         const pokemons = await pokemonService.findAll(type);
+         res.status(200).json(pokemons);
      } catch(error) {
          // 6.1.3: Si hay un error al acceder al services respondemos un error generico
          res.status(404).json( { message: 'no hay datos'} );
