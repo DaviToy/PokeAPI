@@ -47,7 +47,7 @@
      try {
          // 6.1.2: Acceder a la capa service para tener una respuesta
          await characterService.create(newCharacter);
-         res.status(201).send();
+         res.status(201).send({message: 'Creacion exitosa'});
      } catch(error) {
          // 6.1.3: Si hay un error al acceder al services respondemos un error generico
          res.status(500).send( { message: 'intenten más tarde' } );
