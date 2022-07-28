@@ -4,13 +4,3 @@
     const data = await response.json();
     console.log('data: ', data);
 })();
-
-// const algo = () => {
-
-// };
-// algo();
-
-// IIFE: https://developer.mozilla.org/es/docs/Glossary/IIFE
-// (() => {
-
-// })();
