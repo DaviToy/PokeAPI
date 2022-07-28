@@ -1,119 +1,27 @@
 {
-  "pokemonskanto": [
-    {
-      "id": 1,
-      "name": "Charizard",
-      "type": "fuego/volador",
-      "heigh": 2
-    },
-    {
-      "id": 2,
-      "name": "Squirtle",
-      "type": "agua",
-      "height": 1
-    },
-    {
-      "id": 3,
-      "name": "Metapod",
-      "type": "bicho",
-      "height": 1
-    },
-    {
-      "name": "Bulbasur",
-      "type": "si",
-      "height": 20,
-      "id": 4
-    },
-    {
-      "id": 5,
-      "name": "zapdos",
-      "type": "normal",
-      "height": 3
-    },
-    {
-      "id": 6,
-      "name": "Charmander",
-      "type": "fuego",
-      "height": 50
-    }
-  ],
-  "pokemonsjohto": [
-    {
-      "id": 1,
-      "name": "Chikorita",
-      "type": "planta",
-      "weight": 6
-    },
-    {
-      "id": 2,
-      "name": "Cyndaquil",
-      "type": "fuego",
-      "weight": 7
-    },
-    {
-      "id": 3,
-      "name": "Slugma",
-      "type": "fuego",
-      "weight": 35
-    },
-    {
-      "id": 4,
-      "name": "Porygon2",
-      "type": "normal",
-      "weight": 32
-    },
-    {
-      "id": 5,
-      "name": "Hitmontop",
-      "type": "lucha",
-      "weight": 48
-    },
-    {
-      "id": 6,
-      "name": "Magby",
-      "type": "fuego",
-      "weight": 21
-    },
-    {
-      "id": 7,
-      "name": "Unown",
-      "type": "psiquico",
-      "weight": 5
-    }
-  ],
-  "characters": [
-    {
-      "id": 1,
-      "name": "Ash Ketchum",
-      "region": 1,
-      "home": "Pueblo Paleta"
-    },
-    {
-      "id": 2,
-      "name": "Brock",
-      "region": 1,
-      "home": "Ciudad Plateada"
-    },
-    {
-      "id": 3,
-      "name": "Iris",
-      "region": 5,
-      "home": "Aldea de los Dragones"
-    },
-    {
-      "id": 4,
-      "name": "Serena",
-      "region": 6,
-      "home": "Pueblo Vaniville"
-    },
-    {
-      "id": 5,
-      "name": "Danny",
-      "region": 4,
-      "home": "Isla Ombligo"
-    }
-  ],
-  "profile": {
-    "name": "davitoy"
+    "pokemonskanto": [
+        { "id": 1, "name": "Charizard", "type": "fuego/volador", "heigh": 2 },
+        { "id": 2, "name": "Squirtle", "type": "agua", "height": 1 },
+        { "id": 3, "name": "Metapod", "type": "bicho", "height": 1 },
+        { "id": 4, "name": "Caterpie", "type": "bicho", "height": 2 },
+        { "id": 5, "name": "Rattata", "type": "normal", "height": 3 }
+    ],
+    "pokemonsjohto": [
+        { "id": 1, "name": "Chikorita", "type": "planta", "weight": 6 },
+        { "id": 2, "name": "Cyndaquil", "type": "fuego", "weight": 7 },
+        { "id": 3, "name": "Slugma", "type": "fuego", "weight": 35 },
+        { "id": 4, "name": "Porygon2", "type": "normal", "weight": 32 },
+        { "id": 5, "name": "Hitmontop", "type": "lucha", "weight": 48 },
+        { "id": 6, "name": "Magby", "type": "fuego", "weight": 21 },
+        { "id": 7, "name": "Unown", "type": "psiquico", "weight": 5 }     
+    ],
+    "characters": [
+        { "id": 1, "name": "Ash Ketchum", "region": 1 , "home": "Pueblo Paleta" },
+        { "id": 2, "name": "Brock", "region": 1, "home": "Ciudad Plateada" },
+        { "id": 3, "name": "Iris", "region": 5, "home": "Aldea de los Dragones" },
+        { "id": 4, "name": "Serena", "region": 6, "home": "Pueblo Vaniville" },
+        { "id": 5, "name": "Danny", "region": 4, "home": "Isla Ombligo" }
+    ],
+
+    "profile": { "name": "davitoy" }
   }
-}
