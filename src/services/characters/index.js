@@ -7,11 +7,11 @@ class CharactersServices {
 
     generateData() {
         this.characters = [
-            { id: 1, name: 'Ash Ketchum', region: 'Kanto', home: 'Pueblo Paleta' },
-            { id: 2, name: 'Brock', region: 'Kanto', home: 'Ciudad Plateada' },
-            { id: 3, name: 'Iris', region: 'Teselia', home: 'Aldea de los Dragones' },
-            { id: 4, name: 'Serena', region: 'Kalos', home: 'Pueblo Vaniville' },
-            { id: 5, name: 'Danny', region: 'Arch Naranja', home: 'Isla Ombligo' },
+            { id: 1, name: 'Ash Ketchum', region: 1 , home: 'Pueblo Paleta' },
+            { id: 2, name: 'Brock', region: 1, home: 'Ciudad Plateada' },
+            { id: 3, name: 'Iris', region: 5, home: 'Aldea de los Dragones' },
+            { id: 4, name: 'Serena', region: 6, home: 'Pueblo Vaniville' },
+            { id: 5, name: 'Danny', region: 4, home: 'Isla Ombligo' },
         ];
     }
 
