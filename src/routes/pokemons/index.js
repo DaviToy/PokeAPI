@@ -15,10 +15,10 @@
  // %22 => comillas dobles
  pokemonsRouter.get('/', async (req, res) => {
      // 6.1.1: Leer la request
-     const { type } = req.query;
+     const { height } = req.query;
      try {
          // 6.1.2: Acceder a la capa service para tener una respuesta
-         const pokemons = await pokemonService.findAll(type);
+         const pokemons = await pokemonService.findAll(height);
          res.status(200).json(pokemons);
      } catch(error) {
          // 6.1.3: Si hay un error al acceder al services respondemos un error generico

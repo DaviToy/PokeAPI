@@ -27,13 +27,13 @@ class PokemonsServices {
         });
     }
 
-    findAll(type) {
+    findAll(height) {
         // 6.1.4: Se simula una promesa (new Promise) y una operacion asincrona (setTimeout = base de datos)
         return new Promise((resolve, reject) => {
             setTimeout(() => {
                 // 6.1.5 Logica de negocio
-                if (type) {
-                    const filteredData = this.pokemons.filter(pokemon => pokemon.type >= type);
+                if (height) {
+                    const filteredData = this.pokemons.filter(pokemon => pokemon.height >= height);
                     // 6.1.6 En caso de exito usar resolve();
                     resolve(filteredData);
                 }
