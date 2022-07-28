@@ -1,12 +1,12 @@
-class PokemonsServices {
+class PokemonskantoServices {
 
     constructor() {
-        this.pokemons = [];
+        this.pokemonskanto = [];
         this.generateData();
     }
 
     generateData() {
-        this.pokemons = [
+        this.pokemonskanto = [
             { id: 1, name: 'Slaking', type: 'normal', height: 151 },
             { id: 2, name: 'Typhlosion', type: 'fire', height: 51 },
             { id: 3, name: 'Snorlax', type: 'normal', height: 421 },
@@ -15,12 +15,12 @@ class PokemonsServices {
         ];
     }
 
-    create(newPokemon) {
+    create(newPokemonkanto) {
         // 6.1.4: Se simula una promesa (new Promise) y una operacion asincrona (setTimeout = base de datos)
         return new Promise((resolve, reject) => {
             setTimeout(() => {
                 // 6.1.5 Logica de negocio
-                this.pokemons.push(newPokemon);
+                this.pokemonskanto.push(newPokemonkanto);
                 // 6.1.6 En caso de exito usar resolve();
                 resolve();
             }, 1000);
@@ -33,11 +33,11 @@ class PokemonsServices {
             setTimeout(() => {
                 // 6.1.5 Logica de negocio
                 if (height) {
-                    const filteredData = this.pokemons.filter(pokemon => pokemon.height >= height);
+                    const filteredData = this.pokemonskanto.filter(pokemonkanto => pokemonkanto.height >= height);
                     // 6.1.6 En caso de exito usar resolve();
                     resolve(filteredData);
                 }
-                resolve(this.pokemons);
+                resolve(this.pokemonskanto);
             }, 1000);
         });
     }
@@ -45,10 +45,10 @@ class PokemonsServices {
     findOne(id) {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                const pokemon = this.pokemons.find(pokemon => pokemon.id === parseInt(id));
+                const pokemonkanto = this.pokemonskanto.find(pokemonkanto => pokemonkanto.id === parseInt(id));
                 // if (shoe !== '' && shoe !== 0 && shoe !== null && shoe !== undefined) {
-                if (pokemon) {
-                    resolve(pokemon);
+                if (pokemonkanto) {
+                    resolve(pokemonkanto);
                 }
             }, 1000);
         });
@@ -57,12 +57,12 @@ class PokemonsServices {
     editPartial(id, body) {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                const indexFounded = this.pokemons.findIndex(pokemon => pokemon.id === parseInt(id));
+                const indexFounded = this.pokemonskanto.findIndex(pokemonkanto => pokemonkanto.id === parseInt(id));
                 if (indexFounded !== -1) {
-                    let pokemonsCopy = [ ...this.pokemons ];
-                    const newBody = this.pokemons[indexFounded];
-                    pokemonsCopy[indexFounded] = { ...newBody, ...body };
-                    this.pokemons = [ ...pokemonsCopy ];
+                    let pokemonskantoCopy = [ ...this.pokemonskanto ];
+                    const newBody = this.pokemonskanto[indexFounded];
+                    pokemonskantoCopy[indexFounded] = { ...newBody, ...body };
+                    this.pokemonskanto = [ ...pokemonskantoCopy ];
                     resolve();
                 }
             }, 1000);
@@ -72,11 +72,11 @@ class PokemonsServices {
     editComplete(id, body) {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                const indexFounded = this.pokemons.findIndex(pokemon => pokemon.id === parseInt(id));
+                const indexFounded = this.pokemonskanto.findIndex(pokemonkanto => pokemonkanto.id === parseInt(id));
                 if (indexFounded !== -1) {
-                    let pokemonsCopy = [ ...this.pokemons ];
-                    pokemonsCopy[indexFounded] = { id, ...body };
-                    this.pokemons = [ ...pokemonsCopy ];
+                    let pokemonskantoCopy = [ ...this.pokemonskanto ];
+                    pokemonskantoCopy[indexFounded] = { id, ...body };
+                    this.pokemonskanto = [ ...pokemonskantoCopy ];
                     resolve();
                 }
             }, 1000);
@@ -86,11 +86,11 @@ class PokemonsServices {
     delete(id) {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                const indexFounded = this.pokemons.findIndex(pokemon => pokemon.id === parseInt(id));
+                const indexFounded = this.pokemonskanto.findIndex(pokemonkanto => pokemonkanto.id === parseInt(id));
                 if (indexFounded !== -1) {
-                    const pokemonsCopy = [ ...this.pokemons ];
-                    pokemonsCopy.splice(indexFounded, 1);
-                    this.pokemons = [ ...pokemonsCopy ];
+                    const pokemonskantoCopy = [ ...this.pokemonskanto ];
+                    pokemonskantoCopy.splice(indexFounded, 1);
+                    this.pokemonskanto = [ ...pokemonskantoCopy ];
                     resolve();
                 }
             }, 1000);
@@ -98,4 +98,4 @@ class PokemonsServices {
     }
 }
 
-module.exports = PokemonsServices;
+module.exports = PokemonskantoServices;
