@@ -10,7 +10,7 @@ const routerApi = (app) => {
     // 6.1 Puntos de entrada de la API
     app.use('/dummy', dummyRouter);
     app.use('/pokemonskanto', pokemonskantoRouter);
-    app.use('./pokemonsjohto', pokemonsjohtoRouter)
+    app.use('/pokemonsjohto', pokemonsjohtoRouter)
     app.use('/characters', charactersRouter)
     // router.use('/customers', customersRouter);
 };
