@@ -7,13 +7,13 @@ class PokemonsjohtoServices {
 
     generateData() {
         this.pokemonsjohto = [
-            { id: 1, name: 'Chikorita', type: 'planta', height: 6 },
-            { id: 2, name: 'Cyndaquil', type: 'fuego', height: 7 },
-            { id: 3, name: 'Slugma', type: 'fuego', height: 35 },
-            { id: 4, name: 'Porygon2', type: 'normal', height: 32 },
-            { id: 5, name: 'Hitmontop', type: 'lucha', height: 48 },
-            { id: 6, name: 'Magby', type: 'fuego', height: 21 },
-            { id: 7, name: 'Unown', type: 'psiquico', height: 5 },
+            { id: 1, name: 'Chikorita', type: 'planta', weight: 6 },
+            { id: 2, name: 'Cyndaquil', type: 'fuego', weight: 7 },
+            { id: 3, name: 'Slugma', type: 'fuego', weight: 35 },
+            { id: 4, name: 'Porygon2', type: 'normal', weight: 32 },
+            { id: 5, name: 'Hitmontop', type: 'lucha', weight: 48 },
+            { id: 6, name: 'Magby', type: 'fuego', weight: 21 },
+            { id: 7, name: 'Unown', type: 'psiquico', weight: 5 },
         ]
     }
 
@@ -26,11 +26,11 @@ class PokemonsjohtoServices {
         })
     }
 
-    findAll(height) {
+    findAll(weight) {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
-                if (height) {
-                    const filteredData = this.pokemonsjohto.filter(pokemonjohto => pokemonjohto.height >= height)
+                if (weight) {
+                    const filteredData = this.pokemonsjohto.filter(pokemonjohto => pokemonjohto.weight >= weight)
                     resolve(filteredData)
                 }
                 resolve(this.pokemonsjohto)

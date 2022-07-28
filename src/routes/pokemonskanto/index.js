@@ -1,7 +1,4 @@
-
-/**
- * Capa route, utilizada para el mapeo de los path
- */
+// Capa route
  const express = require('express')
  const pokemonskantoRouter = express.Router()
  const PokemonskantoServices = require('../../services/pokemonskanto')
@@ -25,9 +22,9 @@
      const { id } = req.params
      try {
          const foundedPokemonkanto = await pokemonkantoService.findOne(id)
-         res.status(200).send( { message: 'encontrado!', foundedPokemonkanto } )
+         res.status(200).send( { message: 'dato encontrado', foundedPokemonkanto } )
      } catch {
-         res.status(404).send({ message: 'ese id no existe' } )
+         res.status(404).send({ message: 'id no encontrado' } )
      }
  })
  
@@ -39,7 +36,7 @@
          await pokemonkantoService.create(newPokemonkanto)
          res.status(201).send({message: 'Creacion exitosa'})
      } catch(error) {
-         res.status(500).send( { message: 'intenten más tarde' } )
+         res.status(500).send( { message: 'intente mas tarde' } )
      }
  })
  
@@ -49,9 +46,9 @@
      const { id } = req.params
      try {
          await pokemonkantoService.editPartial(id, body)
-         res.status(200).send( { message: 'modificacion patch exitosa!', id } )
+         res.status(200).send( { message: 'modificacion patch exitosa', id } )
      } catch {
-         res.status(404).send({ message: 'ese id no existe' } )
+         res.status(404).send({ message: 'id no encontrado' } )
      }
  })
  
@@ -61,9 +58,9 @@
      const { id } = req.params
      try {
          await pokemonkantoService.editComplete(id, body)
-         res.status(200).send( { message: 'modificacion put exitosa!', id } )
+         res.status(200).send( { message: 'modificacion put exitosa', id } )
      } catch {
-         res.status(404).send({ message: 'ese id no existe' } )
+         res.status(404).send({ message: 'id no encontrado' } )
      }
  })
  
@@ -72,9 +69,9 @@
      const { id } = req.params
      try {
          await pokemonkantoService.delete(id)
-         res.status(200).send( { message: 'eliminacion exitosa!' } )
+         res.status(200).send( { message: 'eliminacion exitosa' } )
      } catch {
-         res.status(404).send({ message: 'ese id no existe' } )
+         res.status(404).send({ message: 'id no encontrado' } )
      }
  })
  

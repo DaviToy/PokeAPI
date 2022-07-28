@@ -7,9 +7,9 @@ class PokemonskantoServices {
 
     generateData() {
         this.pokemonskanto = [
-            { id: 1, name: 'Charizard', type: 'fuego/volador', height: 90 },
-            { id: 2, name: 'Squirtle', type: 'agua', height: 9 },
-            { id: 3, name: 'Metapod', type: 'bicho', height: 9 },
+            { id: 1, name: 'Charizard', type: 'fuego/volador', height: 2 },
+            { id: 2, name: 'Squirtle', type: 'agua', height: 1 },
+            { id: 3, name: 'Metapod', type: 'bicho', height: 1 },
             { id: 4, name: 'Caterpie', type: 'bicho', height: 2 },
             { id: 5, name: 'Rattata', type: 'normal', height: 3 },
         ]
